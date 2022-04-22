@@ -10,7 +10,7 @@ import webbrowser
 import os
 
 #detect keys the target pressed
-#can copy from else: to the e() above the next else: to add more keys that trolls the target
+#can copy from ""else:"" to the ""e()"" above the next ""else:"" to add more keys that trolls the target
 def on_press(key):
     if key == Key.shift:
         try:
