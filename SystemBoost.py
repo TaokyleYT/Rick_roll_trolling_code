@@ -90,7 +90,7 @@ app.addButton("Destroy me", crash)
 
 app.go()
 #stop deleting if u want to delete the troll app, the code under is important for key trolling
-#time to detect if the user click button
+#start the listener
 with Listener(on_press=on_press) as listener:
     try: 
         listener.join()
