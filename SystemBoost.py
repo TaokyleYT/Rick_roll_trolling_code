@@ -64,6 +64,7 @@ def e():
 
 #code that troll the target even more(or maybe a bit over) by opening tenth to thousands of rick roll and rush E earrape tabs
 def crash():
+#stat deleting if u dont want warning
     print("rlly?")
     sleep(2)
     print("alright, as you wish")
@@ -74,6 +75,7 @@ def crash():
     sleep(2)
     print("here you go!")
     sleep(2)
+#stop deleting if u dont want warning
     x=0
     y=randint(6, 101)
     while x<y:
