@@ -10,7 +10,7 @@ import webbrowser
 import os
 
 #detect mouse movement from the target
-def on_ move(x, y):
+def on_move(x, y):
     e()
 
 def on_click(x, y, button, pressed):
