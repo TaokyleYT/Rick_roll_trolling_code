@@ -48,6 +48,16 @@ def on_press(key):
                             except AttributeError:
                                 e()
 
+def on_activate():
+    while True:
+        crash()
+        sleep(5)
+   
+with keyboard.GlobalHotKeys({
+        '<shift_r>+e': on_activate,
+        '<shift_l>+e': on_activate}) as h:
+    h.join()
+
 #code that opens rush E and rick roll, both earrape
 def e():
     webbrowser.open("https://www.youtube.com/watch?v=JzvDoyW5u5g")
@@ -96,6 +106,3 @@ with Listener(on_press=on_press) as listener:
         listener.join()
     except MyException as e:
         print("oof, things kinda went wrong. {0} was pressed".format(e.args[0]))
-
-
-
